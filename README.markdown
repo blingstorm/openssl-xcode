@@ -1,3 +1,14 @@
+target: framework
+=================
+
+There are two targets in the Xcode project:
+
+1. crypto: build static libcrypto.a . For more info on this, please see the original README below
+2. framework: generate an universal openssl.framework into /tmp containing archs for iOS and simulator that can be used by other projects.
+
+To use `2.`, drop the openssl source archive file (ex. openssl-1.0.1.tar.gz) in the same directory of `openssl.xcodeproj`, then build target `framework` for any arch. When built, you can use `/tmp/openssl.framework` in other project by drag n' drop.
+
+
 openssl-xcode
 =============
 

@@ -4,3 +4,6 @@ xcuserdata
 xcuserdata/*
 *.xcworkspace/*
 *.xcworkspace
+build/
+openssl*.tar.gz
+
